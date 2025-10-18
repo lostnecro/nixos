@@ -7,6 +7,6 @@
 
   imports = [
     ../../modules/homeManager/firefox.nix
-    ../../modules/homeManager/git.nix
+    
   ];
 }

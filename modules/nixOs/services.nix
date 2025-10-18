@@ -8,5 +8,9 @@
     #Pipewire
     services.pipewire.enable = true;
     services.pipewire.pulse.enable = true;
+
+    #bluetooth
+    services.blueman.enable = true;
+    hardware.bluetooth.enable = true;
     
 }
