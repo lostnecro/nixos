@@ -1,15 +1,14 @@
 { config, pkgs, lib, ... }:
 
 let
-    # Read email from file
-    userEmail = lib.strings.trim (builtins.readFile /etc/nixos/modules/modulesHome/email.txt);
+    secrets = import ./secrets.nix;
 in
 
 {
     programs.git = {
     enable = true;
     userName = "Lost";
-    userEmail = userEmail;
+    userEmail = secrets.userEmail;
     extraConfig = {
         init.defaultBranch = "main";
     };
