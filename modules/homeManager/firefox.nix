@@ -4,7 +4,7 @@
     programs.firefox = {
         enable = true;
 
-        profile.pessoal = {
+        profiles.pessoal = {
             name = "Pessoal";
             isDefault = true;
 
@@ -22,7 +22,7 @@
                 #Search engine
                 "browser.search.defaultenginename" = "DuckDuckGo";
                 "browser.search.region" = "BR";
-            }
+            };
         };
-    }
+    };
 }
