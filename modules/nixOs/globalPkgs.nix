@@ -15,7 +15,12 @@
     nwg-look
     brightnessctl
     nautilus
+    
     ];
 
-    programs.hyprland.enable = true;
-}
+    programs.hyprland.withUWSM = true;
+    programs.hyprland = {
+        enable = true;
+        xwayland.enable = true;
+    };
+}   

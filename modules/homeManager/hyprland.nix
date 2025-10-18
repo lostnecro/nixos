@@ -1,6 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
+
     xdg.configFile = {
     "hypr/hyprland.conf".source = ./hyprland/hyprland.conf;
     "hypr/config.conf".source = ./hyprland/config.conf;
