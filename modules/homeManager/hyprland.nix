@@ -7,7 +7,7 @@
     "hypr/binds.conf".source = ./hyprland/binds.conf;
     "hypr/defaults.conf".source = ./hyprland/defaults.conf;
     "hypr/env.conf".source = ./hyprland/env.conf;
-    "hypr/Monitors.conf".source = ./hyprland/monitor.conf;
+    "hypr/monitor.conf".source = ./hyprland/monitor.conf;
     "hypr/rules.conf".source = ./hyprland/rules.conf;
     };
 }
