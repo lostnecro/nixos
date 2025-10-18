@@ -5,7 +5,7 @@
     imports = [
         ./hardware-configuration.nix
         ../../modules/nixOs/globalNix.nix
-        ../../users/lost.nix
+        ../../users/lost/user.nix
     ];
 
     #Experimental features
