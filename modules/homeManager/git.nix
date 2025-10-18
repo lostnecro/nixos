@@ -2,7 +2,7 @@
 
 let
     # Read email from file
-    userEmail = lib.strings.trim (builtins.readFile ./email.txt);
+    userEmail = lib.strings.trim (builtins.readFile /etc/nixos/modules/modulesHome/email.txt);
 in
 
 {
