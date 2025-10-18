@@ -23,6 +23,6 @@
                 "browser.search.defaultenginename" = "DuckDuckGo";
                 "browser.search.region" = "BR";
             }
-        }
-    };
+        };
+    }
 }
