@@ -6,7 +6,7 @@
   home.stateVersion = "25.05";
 
   imports = [
-    ../../modules/homeManager/firefox.nix
+    ../../modules/homeManager/globalHome.nix
     
   ];
 }

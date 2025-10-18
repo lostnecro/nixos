@@ -1,6 +1,6 @@
-{ pkgs, inputs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {imports = [
     ./firefox.nix
-    ./zen.nix
-]}
+];
+}
