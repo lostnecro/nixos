@@ -2,7 +2,7 @@
 
 let
     # Read email from file
-    userEmail = builtins.trim (builtins.readFile ./email.txt);
+    userEmail = lib.strings.trim (builtins.readFile ./email.txt);
 in
 
 {
