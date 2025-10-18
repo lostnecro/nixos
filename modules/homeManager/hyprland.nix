@@ -2,12 +2,12 @@
 
 {
     xdg.configFile = {
-    "hyprland/hyprland.conf".source = ./hyprland/hyprland.conf;
-    "hyprland/config.conf".source = ./hyprland/config.conf;
-    "hyprland/binds.conf".source = ./hyprland/binds.conf;
-    "hyprland/defaults.conf".source = ./hyprland/defaults.conf;
-    "hyprland/env.conf".source = ./hyprland/env.conf;
-    "hyprland/Monitors.conf".source = ./hyprland/Monitors.conf;
-    "hyprland/rules.conf".source = ./hyprland/rules.conf;
+    "hypr/hyprland.conf".source = ./hyprland/hyprland.conf;
+    "hypr/config.conf".source = ./hyprland/config.conf;
+    "hypr/binds.conf".source = ./hyprland/binds.conf;
+    "hypr/defaults.conf".source = ./hyprland/defaults.conf;
+    "hypr/env.conf".source = ./hyprland/env.conf;
+    "hypr/Monitors.conf".source = ./hyprland/monitor.conf;
+    "hypr/rules.conf".source = ./hyprland/rules.conf;
     };
 }
