@@ -9,7 +9,7 @@
     neovim
     kitty
     vscode
-    wofi
+    rofi
     zed
     pavucontrol
     nwg-look
@@ -25,6 +25,7 @@
     whitesur-cursors
     whitesur-kde
     killall
+    pyprland
     ];
 
     fonts.packages = with pkgs; [
