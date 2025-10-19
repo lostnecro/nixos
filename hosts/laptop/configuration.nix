@@ -12,8 +12,11 @@
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
     #Bootloader
-    boot.loader.systemd-boot.enable = true;
-    boot.loader.efi.canTouchEfiVariables = true;
+    boot.loader.limine = {
+        enable = true;
+        efiSupport = true;
+        maxGenerations = 20;
+    };
 
     #Hostname
     networking.hostName = "nixos";

@@ -26,6 +26,7 @@
     whitesur-kde
     killall
     pyprland
+    btop
     ];
 
     fonts.packages = with pkgs; [

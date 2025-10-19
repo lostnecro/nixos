@@ -11,6 +11,6 @@
     "hypr/monitor.conf".source = ./hyprland/monitor.conf;
     "hypr/rules.conf".source = ./hyprland/rules.conf;
     "hypr/boot.conf".source = ./hyprland/boot.conf;
-    "hypr/pyprland.conf".source = ./hyprland/pyprland.conf;
+    "hypr/pyprland.toml".source = ./hyprland/pyprland.toml;
     };
 }

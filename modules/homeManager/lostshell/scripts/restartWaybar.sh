@@ -1,1 +1,1 @@
-killall waybar && waybar
+killall .waybar-wrapped && waybar
