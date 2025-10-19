@@ -24,6 +24,7 @@
     whitesur-icon-theme
     whitesur-cursors
     whitesur-kde
+    killall
     ];
 
     fonts.packages = with pkgs; [

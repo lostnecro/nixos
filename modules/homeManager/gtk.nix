@@ -17,7 +17,7 @@
 
     iconTheme = {
       package = pkgs.whitesur-icon-theme;
-      name = "WhiteSur-dark";
+      name = "WhiteSur-ark";
     };
 
     font = {
