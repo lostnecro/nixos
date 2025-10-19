@@ -12,5 +12,7 @@
     #bluetooth
     services.blueman.enable = true;
     hardware.bluetooth.enable = true;
-    
+
+    #Docker
+    virtualisation.docker.enable = true;
 }

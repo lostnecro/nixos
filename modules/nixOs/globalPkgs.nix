@@ -15,7 +15,10 @@
     nwg-look
     brightnessctl
     nautilus
-    
+    distrobox
+    distroshelf
+    e2fsprogs
+
     ];
 
     programs.hyprland = {
