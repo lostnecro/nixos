@@ -27,6 +27,10 @@
     killall
     pyprland
     btop
+    remmina
+    docker-compose
+    lazydocker
+    ghostty
     ];
 
     fonts.packages = with pkgs; [
@@ -45,4 +49,6 @@
     };
 
     programs.waybar.enable = true;
+
+    programs.steam.enable = true;
 }   

@@ -5,7 +5,7 @@
     ./hyprland.nix
     ./waybar.nix
     ./scripts.nix
-    ./flatpak.nix
+    #./flatpak.nix
     #./gtk.nix
 ];
 }

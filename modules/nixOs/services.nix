@@ -18,4 +18,7 @@
 
     #Flatpak
     services.flatpak.enable = true;
+
+    #Appimage
+    programs.appimage.enable = true;
 }
