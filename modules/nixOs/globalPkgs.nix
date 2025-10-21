@@ -31,6 +31,10 @@
     docker-compose
     lazydocker
     ghostty
+    hydralauncher
+    protonvpn-gui
+    keepassxc
+    ani-cli
     ];
 
     fonts.packages = with pkgs; [

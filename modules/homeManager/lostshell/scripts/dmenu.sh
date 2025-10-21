@@ -55,7 +55,7 @@ show_toolsMenu() {
 ##Launches documentation submenu##
 ##################################
 show_docsMenu() {
-    docsMenu="󰌑 Go Back\n󰣇 ArchWiki\n Hyprland\n Waybar\n ProtonDB"
+    docsMenu="󰌑 Go Back\n󰣇 ArchWiki\n󱄅 NixOS Packages\n󱄅 NixOS Options\n󱄅 HomeManager Options\n Hyprland\n Waybar\n ProtonDB"
     navigationDocs=$(echo -e "$docsMenu" | rofi -dmenu -p "Documantation")
 
     case "$navigationDocs" in
@@ -63,6 +63,12 @@ show_docsMenu() {
             show_mainMenu;;
         *ArchWiki)
             xdg-open "https://wiki.archlinux.org/title/Main_page" && notify-send -t 1300 "󰣇 ArchWiki was open";;
+        "󱄅 NixOS Packages")
+            xdg-open "https://search.nixos.org/packages" && notify-send -t 1300 "󱄅 NixOS Packages was open";;
+        "󱄅 NixOS Options")
+            xdg-open "https://search.nixos.org/options" && notify-send -t 1300 "󱄅 NixOS Options was open";;
+        "󱄅 HomeManager Options")
+            xdg-open "https://home-manager-options.extranix.com/?query=&release=master" && notify-send -t 1300 "󱄅 HomeManager Options was open";;
         *Hyprland)
             xdg-open "https://wiki.hypr.land/" && notify-send -t 1300 " Hyprland Wiki was open";;
         *Waybar)
@@ -76,7 +82,7 @@ show_docsMenu() {
 ##Launches settings submenu##
 #############################
 show_settingsMenu() {
-    settingsMenu="󰌑 Go Back\n Wi-Fi\n What is my local IP?\n Open .config in Zed\n󰘳 Binds\n󰍹 Display\n Startup\n󰒓 Edit Waybar\n Restart Waybar\n󰒓 Edit Pyprland\n Refresh Pyprland"
+    settingsMenu="󰌑 Go Back\n Wi-Fi\n What is my local IP?\n Open .config in Zed\n󱄅 HomeManager\n󱄅 Rebuild NixOS\n󰘳 Binds\n󰍹 Display\n Startup\n󰒓 Edit Waybar\n Restart Waybar\n󰒓 Edit Pyprland\n Refresh Pyprland"
     navigationSettings=$(echo -e "$settingsMenu" | rofi -dmenu -p "Settings")
 
     case "$navigationSettings" in
@@ -88,6 +94,10 @@ show_settingsMenu() {
             pypr toggle wifi;;
         " What is my local IP?")
             notify-send "Your Local IP is:" "$(ip addr show wlan0 | grep "inet " | awk '{print $2}' | cut -d/ -f1)";;
+        *HomeManager)
+            code /etc/nixos/homeManager/;;
+        "󱄅 Rebuild NixOS")
+            ghostty -e sh -c "sudo nixos-rebuild switch --flake /etc/nixos#laptop; echo 'Pressione ENTER para fechar...' && read";;
         *Binds)
             zeditor $HOME/.config/hypr/binds.conf;;
         *Display)
