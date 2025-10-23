@@ -9,4 +9,12 @@
     ../../modules/homeManager/globalHome.nix
     
   ];
+
+  dconf.enable = true;
+  dconf.settings = {
+    # This sets the global color scheme preference for all supporting GNOME/GTK4 apps
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
+  };
 }

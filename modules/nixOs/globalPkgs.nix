@@ -35,6 +35,7 @@
     protonvpn-gui
     keepassxc
     ani-cli
+    dunst
     ];
 
     fonts.packages = with pkgs; [
