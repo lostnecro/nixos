@@ -8,6 +8,7 @@
     ./shell.nix
     ./winapps.nix
     ./qute.nix
+    ./fastfetch.nix
     #./flatpak.nix
     #./gtk.nix
 ];

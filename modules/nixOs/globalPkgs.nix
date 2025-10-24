@@ -37,7 +37,6 @@
     whitesur-icon-theme
     whitesur-cursors
     whitesur-kde
-    fastfetch
     
     #Privacy/Security
     protonvpn-gui
