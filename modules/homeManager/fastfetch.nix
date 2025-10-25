@@ -6,7 +6,7 @@
         settings = {
             logo = {
                 type = "kitty";
-                source = "/etc/nixos/modules/homeManager/logo.gif";
+                source = "/etc/nixos/modules/homeManager/logo.png";
             };
         };
     };
