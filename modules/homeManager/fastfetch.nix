@@ -6,7 +6,7 @@
         settings = {
             logo = {
                 type = "kitty";
-                source = "./logo.webp";
+                source = "/etc/nixos/modules/homeManager/logo.gif";
             };
         };
     };
