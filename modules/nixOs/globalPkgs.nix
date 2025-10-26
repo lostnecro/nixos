@@ -47,6 +47,7 @@
     #Privacy/Security
     protonvpn-gui
     keepassxc
+    hyprpolkitagent
     
     #Games
     lutris

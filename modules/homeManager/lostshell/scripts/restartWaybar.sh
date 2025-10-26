@@ -1,1 +1,5 @@
-killall .waybar-wrapped && waybar
+killall .waybar-wrapped
+
+sleep 1
+
+waybar
