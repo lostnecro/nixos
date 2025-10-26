@@ -8,6 +8,8 @@
     #Pipewire
     services.pipewire.enable = true;
     services.pipewire.pulse.enable = true;
+    services.pipewire.alsa.enable = true;
+    services.pipewire.jack.enable = true;
 
     #bluetooth
     services.blueman.enable = true;
@@ -21,4 +23,8 @@
 
     #Appimage
     programs.appimage.enable = true;
+
+    #Manager external devices
+    services.udisks2.enable = true;
+    services.gvfs.enable = true;
 }

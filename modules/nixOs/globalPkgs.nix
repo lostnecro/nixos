@@ -29,6 +29,11 @@
     lazydocker
     ghostty
     remmina
+    alsa-tools
+    alsa-firmware
+    prismlauncher
+    ntfs3g
+    kdePackages.dolphin
 
     #Rice
     nerd-fonts.ubuntu
@@ -37,6 +42,7 @@
     whitesur-icon-theme
     whitesur-cursors
     whitesur-kde
+    waypaper
     
     #Privacy/Security
     protonvpn-gui
@@ -58,6 +64,15 @@
     mpv
     ani-cli
     dunst
+
+    #Creation
+    kdePackages.kdenlive
+    gimp
+    inkscape
+    blender
+    audacity
+    ffmpeg
+    imagemagick
     ];
 
     fonts.packages = with pkgs; [
@@ -79,4 +94,6 @@
 
     programs.steam.protontricks.enable = true;
     programs.steam.enable = true;
+
+    programs.obs-studio.enable = true;
 }   

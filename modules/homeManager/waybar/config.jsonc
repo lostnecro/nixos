@@ -16,7 +16,7 @@
   "custom/launcher": {
     "format": "󱓞",
     "tooltip": false,
-    "on-click": "rofi -show-icons  -show drun"
+    "on-click": "rofi -show-icons -show drun"
   },
   "custom/shutdown": {
     "format": "",
