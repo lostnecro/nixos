@@ -16,7 +16,12 @@
     hardware.bluetooth.enable = true;
 
     #Docker
-    virtualisation.docker.enable = true;
+    virtualisation.docker = {
+        enable = true;
+        daemon.settings = {
+            "data-root" = "/home/lost/Projects/DockerRoot";
+        };
+    };
 
     #Flatpak
     services.flatpak.enable = true;

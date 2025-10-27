@@ -43,6 +43,8 @@
     whitesur-cursors
     whitesur-kde
     waypaper
+    afterglow-cursors-recolored
+    mint-cursor-themes
     
     #Privacy/Security
     protonvpn-gui
