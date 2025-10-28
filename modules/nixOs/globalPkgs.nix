@@ -34,6 +34,9 @@
     prismlauncher
     ntfs3g
     kdePackages.dolphin
+    kdePackages.kdeconnect-kde
+    scrcpy
+    android-tools
 
     #Rice
     nerd-fonts.ubuntu
@@ -99,4 +102,6 @@
     programs.steam.enable = true;
 
     programs.obs-studio.enable = true;
+
+    programs.kdeconnect.enable = true;
 }   
