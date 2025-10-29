@@ -10,7 +10,7 @@
 
             settings = {
                 #Start page
-                "browser.startup.homepage" = "https://nixos.org";
+                "browser.startup.homepage" = "https://google.com";
                 
                 #Dark mode
                 "browser.in-content.dark-mode" = true;

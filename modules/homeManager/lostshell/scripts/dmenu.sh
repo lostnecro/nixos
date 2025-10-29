@@ -88,28 +88,10 @@ show_settingsMenu() {
     case "$navigationSettings" in
         "󰌑 Go Back")
             show_mainMenu;;
-        " Open .config in Zed")
-            zeditor "$HOME/.config";;
-        *Wi-Fi)
-            pypr toggle wifi;;
-        " What is my local IP?")
-            notify-send "Your Local IP is:" "$(ip addr show wlan0 | grep "inet " | awk '{print $2}' | cut -d/ -f1)";;
-        *HomeManager)
-            code /etc/nixos/homeManager/;;
         "󱄅 Rebuild NixOS")
             ghostty -e sh -c "sudo nixos-rebuild switch --flake /etc/nixos#laptop; echo 'Pressione ENTER para fechar...' && read";;
-        *Binds)
-            zeditor $HOME/.config/hypr/binds.conf;;
-        *Display)
-            zeditor $HOME/.config/hypr/displays.conf;;
-        *Startup)
-            zeditor $HOME/.config/hypr/boot.conf;;
-        "󰒓 Edit Waybar")
-            zeditor $HOME/.config/waybar/;;
         " Restart Waybar")
             killall waybar && waybar;;
-        "󰒓 Edit Pyprland")
-            zeditor $HOME/.config/hypr/pyprland.toml;;
         " Refresh Pyprland")
             pypr reload;;
     esac
@@ -126,7 +108,7 @@ show_powerMenu() {
     case "$navigationPowerMenu" in
         "󰌑 Go Back")
             show_mainMenu;;
-        *Lockscreen) swaylock;;
+        *Lockscreen) hyprlock;;
         *Restart) reboot;;
         *Shutdown) shutdown now;;
     esac

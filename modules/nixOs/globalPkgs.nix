@@ -37,6 +37,7 @@
     kdePackages.kdeconnect-kde
     scrcpy
     android-tools
+    qtscrcpy
 
     #Rice
     nerd-fonts.ubuntu
@@ -95,6 +96,8 @@
         enable = true;
         xwayland.enable = true;
     };
+
+    programs.hyprlock.enable = true;
 
     programs.waybar.enable = true;
 
