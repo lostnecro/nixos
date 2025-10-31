@@ -34,7 +34,7 @@ show_placesMenu() {
 ##########################
 
 show_toolsMenu() {
-    toolsMenu="󰌑 Go Back\n Adb Connect\n Mirror Android\n Stream Android Audio\n Kill a Window"
+    toolsMenu="󰌑 Go Back\n Adb Connect\n Mirror Android\n Kill a Window"
     navigationTools=$(echo -e "$toolsMenu" | rofi -dmenu -p "Tools")
 
     case "$navigationTools" in
@@ -43,9 +43,7 @@ show_toolsMenu() {
         " Adb Connect")
             bash $HOME/.config/lostshell/scripts/connectAdb.sh;;
         " Mirror Android")
-            bash $HOME/.local/share/sndcpy/sndcpy & scrcpy;;
-        " Stream Android Audio")
-            bash $HOME/.local/share/sndcpy/sndcpy;;
+            bash scrcpy --mouse=uhid;;
         " Kill a Window")
             hyprctl kill;;
     esac
@@ -82,12 +80,14 @@ show_docsMenu() {
 ##Launches settings submenu##
 #############################
 show_settingsMenu() {
-    settingsMenu="󰌑 Go Back\n Wi-Fi\n What is my local IP?\n Open .config in Zed\n󱄅 HomeManager\n󱄅 Rebuild NixOS\n󰘳 Binds\n󰍹 Display\n Startup\n󰒓 Edit Waybar\n Restart Waybar\n󰒓 Edit Pyprland\n Refresh Pyprland"
+    settingsMenu="󰌑 Go Back\n󱄅 Edit NixOS\n󱄅 Rebuild NixOS\n Restart Waybar\n Refresh Pyprland"
     navigationSettings=$(echo -e "$settingsMenu" | rofi -dmenu -p "Settings")
 
     case "$navigationSettings" in
         "󰌑 Go Back")
             show_mainMenu;;
+        "󱄅 Edit NixOS")
+           $EDITOR /etc/nixos;; 
         "󱄅 Rebuild NixOS")
             ghostty -e sh -c "sudo nixos-rebuild switch --flake /etc/nixos#laptop; echo 'Pressione ENTER para fechar...' && read";;
         " Restart Waybar")

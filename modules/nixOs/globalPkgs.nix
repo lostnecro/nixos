@@ -38,6 +38,10 @@
     scrcpy
     android-tools
     qtscrcpy
+    satty
+    grim
+    slurp
+    wl-clipboard
 
     #Rice
     nerd-fonts.ubuntu

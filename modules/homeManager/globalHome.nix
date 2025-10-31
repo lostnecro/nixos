@@ -10,6 +10,7 @@
     ./qute.nix
     ./fastfetch.nix
     ./swww.nix
+    ./flameshot.nix
     #./flatpak.nix
     #./gtk.nix
 ];

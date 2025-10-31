@@ -16,4 +16,8 @@
         lsw-kill = "docker compose --file ~/.config/winapps/compose.yaml kill";
         cat = "bat";
     };
+
+    home.sessionVariables = {
+        EDITOR = "code";
+    };
 }
