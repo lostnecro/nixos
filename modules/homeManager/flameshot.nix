@@ -1,10 +1,9 @@
 { pkgs, config, ... }:
 
 {
-    programs.flameshot = {
+    services.flameshot = {
         enable = true;
-        settings = {
-            savePath = "${config.home.homeDirectory}/Pictures/Screenshots";
+        settings.General = {
             useGrimAdapter = true;
         };
     };

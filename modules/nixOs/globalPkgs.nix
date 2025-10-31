@@ -42,6 +42,8 @@
     grim
     slurp
     wl-clipboard
+    wev
+    brave
 
     #Rice
     nerd-fonts.ubuntu
