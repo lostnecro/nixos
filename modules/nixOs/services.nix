@@ -2,8 +2,10 @@
 
 {
     #Display manager
-    services.displayManager.ly.enable = true;
-    services.displayManager.defaultSession = "hyprland";
+    services.xserver.enable = true;
+    services.displayManager.sddm.enable = true;
+    services.displayManager.sddm.wayland.enable = true;
+
 
     #Pipewire
     services.pipewire.enable = true;

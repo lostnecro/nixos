@@ -44,6 +44,7 @@
     wl-clipboard
     wev
     brave
+    waybar
 
     #Rice
     nerd-fonts.ubuntu
@@ -98,6 +99,8 @@
     # Older versions might use `fonts.enableDefaultFonts = true;` but this has been renamed [13]
     fonts.enableDefaultPackages = true;
 
+    services.desktopManager.plasma6.enable = true;
+
     programs.hyprland = {
         enable = true;
         xwayland.enable = true;
@@ -105,7 +108,7 @@
 
     programs.hyprlock.enable = true;
 
-    programs.waybar.enable = true;
+    #programs.waybar.enable = true;
 
     programs.steam.protontricks.enable = true;
     programs.steam.enable = true;
