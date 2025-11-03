@@ -18,7 +18,6 @@
     pavucontrol
     nwg-look
     brightnessctl
-    nautilus
     distrobox
     distroshelf
     e2fsprogs
@@ -45,6 +44,11 @@
     wev
     brave
     waybar
+    catppuccin-kvantum
+    kdePackages.qtstyleplugin-kvantum
+    onlyoffice-desktopeditors
+    libreoffice-qt6-fresh
+    thunderbird
 
     #Rice
     nerd-fonts.ubuntu
