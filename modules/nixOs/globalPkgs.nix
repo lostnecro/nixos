@@ -49,6 +49,7 @@
     onlyoffice-desktopeditors
     libreoffice-qt6-fresh
     thunderbird
+    nautilus
 
     #Rice
     nerd-fonts.ubuntu
