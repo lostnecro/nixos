@@ -111,6 +111,8 @@
         xwayland.enable = true;
     };
 
+    programs.niri.enable = true;
+
     programs.hyprlock.enable = true;
 
     #programs.waybar.enable = true;
