@@ -56,7 +56,7 @@
     gnome-keyring
     xdg-desktop-portal-gnome
     xdg-desktop-portal-gtk
-    plasma-polkit-agent
+    kdePackages.polkit-kde-agent-1
 
     #Rice
     nerd-fonts.ubuntu
@@ -118,7 +118,6 @@
         xwayland.enable = true;
     };
 
-    programs.niri.enable = true;
 
     programs.hyprlock.enable = true;
 
@@ -133,4 +132,7 @@
 
     programs.labwc.enable = true;
     programs.xwayland.enable = true;
+
+    programs.niri.enable = true;
+    programs.niri.package = pkgs.niri_git;
 }   

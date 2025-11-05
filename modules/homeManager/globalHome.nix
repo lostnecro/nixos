@@ -11,6 +11,7 @@
     ./fastfetch.nix
     ./swww.nix
     ./flameshot.nix
+    ./niri.nix
     #./flatpak.nix
     #./gtk.nix
 ];

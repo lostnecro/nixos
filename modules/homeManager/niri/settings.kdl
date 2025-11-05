@@ -1,11 +1,26 @@
 input {
     keyboard {
-        layout = "us"
-        variant = "intl"
+        xkb {
+            layout "us"
+            variant "intl"
+        }
     }
 
     touchpad {
         tap
-        natural-scrolling
+        natural-scroll
+    }
+
+    mouse {
+        //natural-scroll
     }
 }
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+layout {
+    gaps 20
+}
+

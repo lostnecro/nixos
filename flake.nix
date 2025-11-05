@@ -11,9 +11,10 @@
     #   url = "github:nix-community/nur-combined?dir=repos/rycee/firefox-addons";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable"; 
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, chaotic, home-manager, ... }@inputs: {
     nixosConfigurations = {
     "laptop" = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
@@ -26,6 +27,7 @@
             home-manager.useUserPackages = true;
             home-manager.users.lost = import ./users/lost/home.nix;
           }
+        chaotic.nixosModules.default 
           
       ];
     };

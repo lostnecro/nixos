@@ -1,0 +1,2 @@
+spawn-at-startup "dunst"
+spawn-at-startup "swww-daemon"

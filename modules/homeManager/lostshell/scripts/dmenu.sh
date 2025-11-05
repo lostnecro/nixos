@@ -91,7 +91,7 @@ show_settingsMenu() {
         "󱄅 Rebuild NixOS")
             ghostty -e sh -c "sudo nixos-rebuild switch --flake /etc/nixos#laptop; echo 'Pressione ENTER para fechar...' && read";;
         " Restart Waybar")
-            killall waybar && waybar;;
+            bash /home/lost/.config/lostshell/scripts/restartWaybar.sh;;
         " Refresh Pyprland")
             pypr reload;;
     esac
