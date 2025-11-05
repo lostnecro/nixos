@@ -50,6 +50,13 @@
     libreoffice-qt6-fresh
     thunderbird
     nautilus
+    android-studio
+    android-studio-tools
+    xwayland-satellite
+    gnome-keyring
+    xdg-desktop-portal-gnome
+    xdg-desktop-portal-gtk
+    plasma-polkit-agent
 
     #Rice
     nerd-fonts.ubuntu
@@ -123,4 +130,7 @@
     programs.obs-studio.enable = true;
 
     programs.kdeconnect.enable = true;
+
+    programs.labwc.enable = true;
+    programs.xwayland.enable = true;
 }   

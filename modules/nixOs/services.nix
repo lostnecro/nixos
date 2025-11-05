@@ -34,4 +34,8 @@
     #Manager external devices
     services.udisks2.enable = true;
     services.gvfs.enable = true;
+
+    services.gnome.gnome-keyring.enable = true;
+    security.pam.services.hyprland.enableGnomeKeyring = true;
+
 }

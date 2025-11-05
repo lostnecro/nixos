@@ -1,0 +1,11 @@
+input {
+    keyboard {
+        layout = "us"
+        variant = "intl"
+    }
+
+    touchpad {
+        tap
+        natural-scrolling
+    }
+}
