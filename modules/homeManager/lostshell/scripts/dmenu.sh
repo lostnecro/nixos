@@ -34,7 +34,7 @@ show_placesMenu() {
 ##########################
 
 show_toolsMenu() {
-    toolsMenu="󰌑 Go Back\n Adb Connect\n Mirror Android\n Kill a Window"
+    toolsMenu="󰌑 Go Back\n Adb Connect\n Mirror Android\n Kill a Window (Hyprland)\n Kill a Window (Niri)"
     navigationTools=$(echo -e "$toolsMenu" | rofi -dmenu -p "Tools")
 
     case "$navigationTools" in
@@ -44,8 +44,10 @@ show_toolsMenu() {
             bash $HOME/.config/lostshell/scripts/connectAdb.sh;;
         " Mirror Android")
             bash scrcpy --mouse=uhid;;
-        " Kill a Window")
+        " Kill a Window (Hyprland)")
             hyprctl kill;;
+        " Kill a Window (Niri)")
+            niri msg pick-window | grep "PID" | awk '{print $2}' | xargs kill;;
     esac
 }
 
@@ -80,12 +82,14 @@ show_docsMenu() {
 ##Launches settings submenu##
 #############################
 show_settingsMenu() {
-    settingsMenu="󰌑 Go Back\n󱄅 Edit NixOS\n󱄅 Rebuild NixOS\n Restart Waybar\n Refresh Pyprland"
+    settingsMenu="󰌑 Go Back\n Change wallpaper\n󱄅 Edit NixOS\n󱄅 Rebuild NixOS\n Restart Waybar\n Refresh Pyprland"
     navigationSettings=$(echo -e "$settingsMenu" | rofi -dmenu -p "Settings")
 
     case "$navigationSettings" in
         "󰌑 Go Back")
             show_mainMenu;;
+        " Change wallpaper")
+            bash $HOME/.config/lostshell/scripts/wallpaper.sh;;
         "󱄅 Edit NixOS")
            $EDITOR /etc/nixos;; 
         "󱄅 Rebuild NixOS")

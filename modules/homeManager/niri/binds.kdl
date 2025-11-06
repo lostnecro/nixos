@@ -9,12 +9,27 @@ binds {
     // Toolbox
     Mod+Escape { spawn-sh "bash ~/.config/lostshell/scripts/dmenu.sh"; }
 
+    // Apps
+    Mod+F1 { spawn "ghostty"; }
+
     // Window control
-    Mod+W { close-window; }
+    Mod+Q { close-window; }
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
     Mod+A { focus-column-left; }
     Mod+D { focus-column-right; }
+    Mod+W { focus-window-up; }
+    Mod+S { focus-window-down; }
+    Mod+Shift+A { move-column-left; }
+    Mod+Shift+D { move-column-right; }
+    Mod+Shift+W { move-window-up; }
+    Mod+Shift+S { move-window-down; }
+    Mod+Shift+Q { consume-or-expel-window-left; }
+    Mod+Shift+E { consume-or-expel-window-right; }
+    Mod+Z { center-column; }
+    Mod+Shift+Z { toggle-window-floating; }
+
+
 
     // Workspace switching
     Mod+Tab { toggle-overview; }

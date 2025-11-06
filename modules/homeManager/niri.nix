@@ -8,5 +8,6 @@
     "niri/boot.kdl".source = ./niri/boot.kdl;
     "niri/settings.kdl".source = ./niri/settings.kdl;
     "niri/monitor.kdl".source = ./niri/monitor.kdl;
+    "niri/rules.kdl".source = ./niri/rules.kdl;
     };
 }

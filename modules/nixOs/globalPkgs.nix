@@ -1,8 +1,9 @@
 { config, pkgs, ... }:
 
 
-    #System wide packages
-{
+    
+{   #System wide packages
+
     environment.systemPackages = with pkgs; [
     
     #Utilities
@@ -101,14 +102,14 @@
     imagemagick
     ];
 
+    #Fonts
     fonts.packages = with pkgs; [
-    # Font packages go here
     nerd-fonts.fira-code
     nerd-fonts.droid-sans-mono
     noto-fonts
-    hachimarupop
+    fira-code-symbols
+    ipafont
     ];
-    # Older versions might use `fonts.enableDefaultFonts = true;` but this has been renamed [13]
     fonts.enableDefaultPackages = true;
 
     services.desktopManager.plasma6.enable = true;
@@ -135,4 +136,5 @@
 
     programs.niri.enable = true;
     programs.niri.package = pkgs.niri_git;
+
 }   
