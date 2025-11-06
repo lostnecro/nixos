@@ -4,7 +4,7 @@ WallDir=${1:-~/Pictures/Wallpapers}
 
 PREVIEW=true \
 rofi -no-config -theme fullscreen-preview.rasi \
-	-show filebrowser -filebrowser-command 'setbg' \
+	-show filebrowser -filebrowser-command 'waypaper --wallpaper' \
 	-filebrowser-directory "$WallDir" \
 	-filebrowser-sorting-method mtime \
 	-selected-row 1 >/dev/null
