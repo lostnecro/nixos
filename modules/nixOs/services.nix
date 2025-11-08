@@ -25,6 +25,9 @@
         };
     };
 
+    virtualisation.waydroid.enable = true;
+    
+
     #Flatpak
     services.flatpak.enable = true;
 
