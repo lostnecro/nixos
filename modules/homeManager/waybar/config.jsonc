@@ -16,7 +16,11 @@
   "custom/launcher": {
     "format": "󱓞",
     "tooltip": false,
-    "on-click": "rofi -show-icons -show drun"
+    "on-click": "rofi -show-icons -show drun",
+    "on-click-right": "niri msg action toggle-overview",
+    "on-scroll-up": "niri msg action focus-column-left",
+    "on-scroll-down": "niri msg action focus-column-right"
+    
   },
   "custom/shutdown": {
     "format": "",

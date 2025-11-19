@@ -9,13 +9,7 @@
     #Utilities
     wget
     curl
-    bat
-    git
-    neovim
-    kitty
-    vscode
     rofi
-    zed
     pavucontrol
     nwg-look
     brightnessctl
@@ -25,9 +19,6 @@
     killall
     pyprland
     btop
-    docker-compose
-    lazydocker
-    ghostty
     remmina
     alsa-tools
     alsa-firmware
@@ -51,13 +42,42 @@
     libreoffice-qt6-fresh
     thunderbird
     nautilus
-    android-studio
-    android-studio-tools
     xwayland-satellite
     gnome-keyring
     xdg-desktop-portal-gnome
     xdg-desktop-portal-gtk
     kdePackages.polkit-kde-agent-1
+    nyxt
+    bluez
+    geary
+    refine
+    
+    #Code
+    bat
+    python314
+    pipx
+    playwright
+    git
+    neovim
+    kitty
+    vscode
+    zed
+    docker-compose
+    lazydocker
+    ghostty
+    android-studio
+    android-studio-tools
+    gearlever
+    loupe
+    lutris
+
+    #Emulators
+    pcsx2
+    rpcs3
+    snes9x
+    retroarch-full
+    ppsspp-qt
+    duckstation
 
     #Rice
     nerd-fonts.ubuntu
@@ -76,7 +96,6 @@
     hyprpolkitagent
     
     #Games
-    lutris
     hydralauncher
     protonup-ng
     protonup-qt
@@ -86,6 +105,10 @@
     vesktop
     gamemode
     overlayed
+    kdePackages.bluedevil
+    bluetui
+    mpvpaper
+    nettools
 
     #Entertainment
     mpv
@@ -112,13 +135,6 @@
     ];
     fonts.enableDefaultPackages = true;
 
-    services.desktopManager.plasma6.enable = true;
-
-    programs.hyprland = {
-        enable = true;
-        xwayland.enable = true;
-    };
-
 
     programs.hyprlock.enable = true;
 
@@ -134,7 +150,21 @@
     programs.labwc.enable = true;
     programs.xwayland.enable = true;
 
-    programs.niri.enable = true;
-    programs.niri.package = pkgs.niri_git;
+    
+
+    programs.cdemu.enable = true;
+    #programs.seahorse.enable = false;
+
+    nixpkgs.overlays = [
+    (final: prev: {
+      pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [
+        (python-final: python-prev: {
+          pyrate-limiter = python-prev.pyrate-limiter.overridePythonAttrs (oldAttrs: {
+            doCheck = false;
+          });
+        })
+      ];
+    })
+  ];
 
 }   
