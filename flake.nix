@@ -18,7 +18,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, chaotic, home-manager, ignis, ... }@inputs: {
+  outputs = { self, nixpkgs, chaotic, home-manager, ... }@inputs: {
     nixosConfigurations = {
     "laptop" = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
@@ -30,9 +30,9 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.lost = import ./users/lost/home.nix;
+            home-manager.extraSpecialArgs = { inherit inputs; };
           }
-        chaotic.nixosModules.default 
-          
+        chaotic.nixosModules.default
       ];
     };
     };
