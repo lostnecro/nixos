@@ -12,6 +12,7 @@
     ./swww.nix
     ./flameshot.nix
     ./niri.nix
+    ./ignis.nix
     #./flatpak.nix
     #./gtk.nix
 ];

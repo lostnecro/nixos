@@ -70,6 +70,7 @@
     gearlever
     loupe
     lutris
+    ocs-url
 
     #Emulators
     pcsx2
@@ -89,6 +90,13 @@
     waypaper
     afterglow-cursors-recolored
     mint-cursor-themes
+    graphite-cursors
+    posy-cursors
+    hackneyed
+    bibata-cursors-translucent
+    pokemon-cursor
+    marwaita-icons
+    gruvbox-plus-icons
     
     #Privacy/Security
     protonvpn-gui

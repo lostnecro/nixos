@@ -7,7 +7,7 @@
 
   imports = [
     ../../modules/homeManager/globalHome.nix
-    
+    inputs.ignis.homeManagerModules.default
   ];
 
   dconf.enable = true;

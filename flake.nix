@@ -12,9 +12,13 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable"; 
+    ignis = {
+      url = "github:ignis-sh/ignis";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, chaotic, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, chaotic, home-manager, ignis, ... }@inputs: {
     nixosConfigurations = {
     "laptop" = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
