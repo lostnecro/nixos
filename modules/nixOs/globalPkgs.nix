@@ -47,9 +47,18 @@
     xdg-desktop-portal-gnome
     xdg-desktop-portal-gtk
     kdePackages.polkit-kde-agent-1
-    nyxt
     bluez
     geary
+    jetbrains.pycharm-community-bin
+    h8mail
+    sherlock
+    glibc
+    glib
+    helvum
+    parabolic
+    kdePackages.merkuro
+    kdePackages.kdepim-addons
+
     refine
     
     #Code

@@ -12,10 +12,6 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable"; 
-    ignis = {
-      url = "github:ignis-sh/ignis";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = { self, nixpkgs, chaotic, home-manager, ... }@inputs: {

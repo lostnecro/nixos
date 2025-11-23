@@ -23,6 +23,11 @@
     #Wifi
     networking.networkmanager.enable = true;
 
+    hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+    };
+
     #Unfree software
     nixpkgs.config.allowUnfree = true;
 

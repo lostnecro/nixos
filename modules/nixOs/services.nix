@@ -22,7 +22,8 @@
     programs.niri.package = pkgs.niri_git;
 
     #Plasma 6
-    #services.desktopManager.plasma6.enable = true;
+    services.desktopManager.plasma6.enable = true;
+    
 
     #Hyprland
     programs.hyprland = {
